@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack -p",
-    "start": "webpack-dev-server"
+    "start": "parcel *.html",
+    "build": "parcel build *.html"
   },
   "keywords": [],
   "author": "",
