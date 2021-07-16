@@ -15,16 +15,19 @@
     <meta name="slogan" content="beacons inbounds">
     <meta name="theme-color" content="#ff851b" />
 
+    <!-- i have to keep changing the default-src ws: number on local checking -->
     <meta
         http-equiv="Content-Security-Policy"
         content="
-        default-src 'self' 'unsafe-inline' ws://localhost:51929/ ws://localhost:53500/ use.typekit.net p.typekit.net;
+        default-src 'self' 'unsafe-inline' ws://localhost:54501/ use.typekit.net p.typekit.net;
         script-src 'self' use.typekit.net;
         font-src use.typekit.net;
         img-src 'self' https://beaconsinbounds.s3.us-west-1.amazonaws.com;
-        
         "
-    >
+        >
+        <!-- frame-ancestors 'none'; -->
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
 </head>
 
 <body>

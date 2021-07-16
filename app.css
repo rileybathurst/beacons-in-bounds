@@ -110,7 +110,7 @@ a:hover {
 }
 
 @media (prefers-color-scheme: dark) {
-  a where(:hover, :focus) {
+  a :where(:hover, :focus) {
     background: whitesmoke;
   }
 }
