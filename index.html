@@ -5,7 +5,7 @@
     <title>#BEACONS INBOUNDS</title>
     <link rel="stylesheet" href="app.css">
     <link rel="stylesheet" href="https://use.typekit.net/lzt6brr.css">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="url" content="https://beaconsinbounds.com/">
     <meta name="siteUrl" content="https://beaconsinbounds.com/">
@@ -18,10 +18,11 @@
     <meta
         http-equiv="Content-Security-Policy"
         content="
-        default-src 'self' 'unsafe-inline' ws://localhost:51929/ use.typekit.net p.typekit.net;
+        default-src 'self' 'unsafe-inline' ws://localhost:51929/ ws://localhost:53500/ use.typekit.net p.typekit.net;
         script-src 'self' use.typekit.net;
         font-src use.typekit.net;
-        img-src 'self' https://beaconsinbounds.s3.us-west-1.amazonaws.com object-src
+        img-src 'self' https://beaconsinbounds.s3.us-west-1.amazonaws.com;
+        
         "
     >
 </head>
