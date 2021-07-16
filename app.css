@@ -84,6 +84,23 @@ body {
 
 a {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: var(--primary);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  transition: 0.5s;
+}
+
+@media (color-gamut: p3) {
+  @supports (color: lch(65% 132 55)) {
+    a :where(:hover, :focus) {
+      color: var(--super-max);
+    }
+  }
+}
+
+a:hover {
+  text-decoration: none;
+  background: lightgray;
 }
 
 .squiggly {
@@ -325,6 +342,16 @@ main svg {
   grid-row: 1;
   grid-column: 1;
   z-index: 5;
+}
+
+/*------------------------------------*/
+  /* #supprt */
+/*------------------------------------*/
+
+#support {
+  width: calc(var(--base-measure) - 2rem);
+  margin-inline: auto;
+  padding-inline: 1rem;
 }
 
 
