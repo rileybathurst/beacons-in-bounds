@@ -15,8 +15,15 @@
     <meta name="slogan" content="beacons inbounds">
     <meta name="theme-color" content="#ff851b" />
 
-    <meta name="Content-Security-Policy" content="base-uri 'self'; default-src 'self';">
-
+    <meta
+        http-equiv="Content-Security-Policy"
+        content="
+        default-src 'self' 'unsafe-inline' use.typekit.net p.typekit.net;
+        script-src 'self' 'unsafe-inline' use.typekit.net;
+        font-src use.typekit.net;
+        img-src 'self' https://beaconsinbounds.s3.us-west-1.amazonaws.com object-src
+        "
+    >
 </head>
 
 <body>
@@ -26,15 +33,15 @@
         <div class="primary-backer">
             <!-- stay gold -->
         </div>
-        <svg id="primary-blob" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <svg id="primary-blob" title="primary-blob" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
             <path fill-opacity="1"
                 d="M0,288L30,256C60,224,120,160,180,144C240,128,300,160,360,181.3C420,203,480,213,540,197.3C600,181,660,139,720,112C780,85,840,75,900,101.3C960,128,1020,192,1080,229.3C1140,267,1200,277,1260,277.3C1320,277,1380,267,1410,261.3L1440,256L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
             </path>
         </svg>
         <img src="https://beaconsinbounds.s3.us-west-1.amazonaws.com/SnowledgeDonnerPass_12.29.20-7292.jpg"
-            alt="jacket image i'm not going to use" />
+            alt="snowboarder with a beacons inbounds sticker on his board" />
 
-        <svg id="base-blob" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <svg id="base-blob" title="base blob" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
             <path fill-opacity="1"
                 d="M0,128L48,106.7C96,85,192,43,288,48C384,53,480,107,576,112C672,117,768,75,864,96C960,117,1056,203,1152,240C1248,277,1344,267,1392,261.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
             </path>
