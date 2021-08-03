@@ -19,7 +19,7 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="627">
     <meta property="og:image:alt" content="snowboarder with a beacons inbounds sticker on his board" />
-    
+
     <meta name="twitter:card" content="https://beaconsinbounds.s3.us-west-1.amazonaws.com/beacons_inbounds-ogimage.jpg">
 
     <meta property="og:title" content="#BEACONS INBOUNDS">
@@ -27,16 +27,14 @@
     <meta property="og:url" content="https://beaconsinbounds.com/" />
 
     <!-- i have to keep changing the default-src ws: number on local checking -->
-    <meta
-        http-equiv="Content-Security-Policy"
-        content="
-        default-src 'self' 'unsafe-inline' ws://localhost:54501/ use.typekit.net p.typekit.net;
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self' ws://localhost:54501/ use.typekit.net p.typekit.net;
+        style-src 'self' 'unsafe-inline' use.typekit.net p.typekit.net;
         script-src 'self' use.typekit.net;
         font-src use.typekit.net;
         img-src 'self' https://beaconsinbounds.s3.us-west-1.amazonaws.com;
-        "
-        >
-        <!-- frame-ancestors 'none'; -->
+        ">
+    <!-- frame-ancestors 'none'; -->
     <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
 
@@ -52,15 +50,65 @@
         <div class="primary-backer">
             <!-- stay gold -->
         </div>
-        <svg id="primary-blob" title="primary-blob" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <svg id="primary-blob" title="primary-blob" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+            preserveAspectRatio="none">
             <path fill-opacity="1"
                 d="M0,288L30,256C60,224,120,160,180,144C240,128,300,160,360,181.3C420,203,480,213,540,197.3C600,181,660,139,720,112C780,85,840,75,900,101.3C960,128,1020,192,1080,229.3C1140,267,1200,277,1260,277.3C1320,277,1380,267,1410,261.3L1440,256L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
             </path>
         </svg>
-        <img src="https://beaconsinbounds.s3.us-west-1.amazonaws.com/SnowledgeDonnerPass_12.29.20-7292.jpg"
-            alt="snowboarder with a beacons inbounds sticker on his board" />
 
-        <svg id="base-blob" title="base blob" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <picture>
+            <source
+                srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/SnowledgeDonnerPass_12.29.20-7292-1920x1280.jpg"
+                media="(min-width: 1440px)" />
+            <source
+                srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/SnowledgeDonnerPass_12.29.20-7292-1920x1280.webp"
+                media="(min-width: 1440px)" type="image/webp" />
+            <source
+                srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/SnowledgeDonnerPass_12.29.20-7292-1440x960.jpg"
+                media="(min-width: 1260px)" />
+            <source
+                srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/SnowledgeDonnerPass_12.29.20-7292-1440x960.webp"
+                media="(min-width: 1260px)" type="image/webp" />
+            <source
+                srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/SnowledgeDonnerPass_12.29.20-7292-1260x840.jpg"
+                media="(min-width: 1080px)" />
+            <source
+                srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/SnowledgeDonnerPass_12.29.20-7292-1260x840.webp"
+                media="(min-width: 1080px)" type="image/webp" />
+            <source
+                srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/SnowledgeDonnerPass_12.29.20-7292-1080x720.jpg"
+                media="(min-width: 900px)" />
+            <source
+                srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/SnowledgeDonnerPass_12.29.20-7292-1080x720.webp"
+                media="(min-width: 900px)" type="image/webp" />
+            <source
+                srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/SnowledgeDonnerPass_12.29.20-7292-900x600.jpg"
+                media="(min-width: 720px)" />
+            <source
+                srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/SnowledgeDonnerPass_12.29.20-7292-900x600.webp"
+                media="(min-width: 720px)" type="image/webp" />
+            <source
+                srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/SnowledgeDonnerPass_12.29.20-7292-720x480.jpg"
+                media="(min-width: 540px)" />
+            <source
+                srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/SnowledgeDonnerPass_12.29.20-7292-720x480.webp"
+                media="(min-width: 540px)" type="image/webp" />
+            <source
+                srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/SnowledgeDonnerPass_12.29.20-7292-540x360.jpg"
+                media="(min-width: 360px)" />
+            <source
+                srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/SnowledgeDonnerPass_12.29.20-7292-540x360.webp"
+                media="(min-width: 360px)" type="image/webp" />
+            <source
+                srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/SnowledgeDonnerPass_12.29.20-7292-360x240.webp"
+                type="image/webp" />
+            <img src="https://beaconsinbounds.s3.us-west-1.amazonaws.com/SnowledgeDonnerPass_12.29.20-7292-360x240.jpg"
+                alt="snowboarder with a beacons inbounds sticker on his board" />
+        </picture>
+
+        <svg id="base-blob" title="base blob" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+            preserveAspectRatio="none">
             <path fill-opacity="1"
                 d="M0,96L30,85.3C60,75,120,53,180,85.3C240,117,300,203,360,234.7C420,267,480,245,540,245.3C600,245,660,267,720,250.7C780,235,840,181,900,181.3C960,181,1020,235,1080,256C1140,277,1200,267,1260,266.7C1320,267,1380,277,1410,282.7L1440,288L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
             </path>
@@ -140,8 +188,17 @@
                     transform="translate(100 100)" />
             </svg>
 
-            <img src="https://beaconsinbounds.s3.us-west-1.amazonaws.com/all+us+crew.jpg"
-                alt="the crew checking beacons" style="clip-path: url(#myPath);" />
+
+            <picture style="clip-path: url(#myPath);">
+                <source srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/all%2Bus%2Bcrew-540x540.jpg"
+                    media="(min-width: 360px)" />
+                <source srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/all%2Bus%2Bcrew-540x540.webp"
+                    media="(min-width: 360px)" type="image/webp" />
+                <source srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/all%2Bus%2Bcrew-360x360.webp"
+                    type="image/webp" />
+                <img src="https://beaconsinbounds.s3.us-west-1.amazonaws.com/all%2Bus%2Bcrew-360x360.jpg"
+                    alt="the crew checking beacons" />
+            </picture>
 
         </article>
 
@@ -163,9 +220,17 @@
                     transform="translate(100 100)" />
             </svg>
 
-            <img src="https://beaconsinbounds.s3.us-west-1.amazonaws.com/rileybathurst.jpg"
-                alt="riley bathurst wears his beacon inbounds" />
-            <!-- style="clip-path: path('M 0 200 L 0,110 A 110,90 0,0,1 240,100 L 200 340 z');" -->
+            <picture>
+                <source srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/rileybathurst-540x540.jpg"
+                    media="(min-width: 360px)" />
+                <source srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/rileybathurst-540x540.webp"
+                    media="(min-width: 360px)" type="image/webp" />
+                <source srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/rileybathurst-360x360.webp"
+                    type="image/webp" />
+                <img src="https://beaconsinbounds.s3.us-west-1.amazonaws.com/rileybathurst-360x360.jpg"
+                    alt="riley bathurst wears his beacon inbounds" />
+            </picture>
+
         </article>
 
         <!-- this gets broken in dark mode -->
@@ -192,8 +257,6 @@
     <section id="contact">
         <h4>Contact</h4>
         <a href="mailto:riley@rileybathurst.com">riley@rileybathurst.com</a>
-
-
     </section>
 
     <footer>
@@ -206,8 +269,23 @@
         <div class="footer-backer">
             <!-- stay gold -->
         </div>
-        <img src="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2+Garrett+laying+it+out+on+white+-+alpine+meadows+shot+bt+Riley+Bathurst.jpg"
-            alt="snowboarder laying down a carve" />
+
+        <picture>
+            <source srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-1260x901.jpg" media="(min-width: 1080px)" />
+            <source srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-1260x901.webp" type="image/webp" media="(min-width: 1080px)" />
+            <source srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-1080x773.jpg" media="(min-width: 900px)" />
+            <source srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-1080x773.webp" media="(min-width: 900px)" type="image/webp" />
+            <source srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-900x644.jpg" media="(min-width: 720px)" />
+            <source srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-900x644.webp" media="(min-width: 720px)" type="image/webp" />
+            <source srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-720x515.jpg" media="(min-width: 540px)" />
+            <source srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-720x515.webp" media="(min-width: 540px)" type="image/webp" />
+            <source srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-540x386.jpg" media="(min-width: 360px)" />
+            <source srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-540x386.webp" media="(min-width: 360px)" type="image/webp" />
+            <source srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-360x257.webp" type="image/webp" />
+            <img src="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-360x257.jpg"
+                alt="snowboarder laying down a carve" />
+        </picture>
+
     </footer>
 
     <script src="app.js" async></script>
