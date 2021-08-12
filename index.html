@@ -55,6 +55,10 @@
             <path fill-opacity="1"
                 d="M0,288L30,256C60,224,120,160,180,144C240,128,300,160,360,181.3C420,203,480,213,540,197.3C600,181,660,139,720,112C780,85,840,75,900,101.3C960,128,1020,192,1080,229.3C1140,267,1200,277,1260,277.3C1320,277,1380,267,1410,261.3L1440,256L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
             </path>
+
+            <path fill-opacity="1"
+                d="M0,288L30,256C60,224,120,160,180,144C240,128,300,160,360,181.3C420,203,480,213,540,197.3C600,181,660,139,720,112C780,85,840,75,900,101.3C960,128,1020,192,1080,229.3C1140,267,1200,277,1260,277.3C1320,277,1380,267,1410,261.3L1440,256L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
+            </path>
         </svg>
 
         <picture>
@@ -107,10 +111,46 @@
                 alt="snowboarder with a beacons inbounds sticker on his board" />
         </picture>
 
-        <svg id="base-blob" title="base blob" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+        <!-- C x1 y1, x2 y2, x y -->
+        <svg id="base-blob" title="base blob" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 10"
             preserveAspectRatio="none">
-            <path fill-opacity="1"
-                d="M0,96L30,85.3C60,75,120,53,180,85.3C240,117,300,203,360,234.7C420,267,480,245,540,245.3C600,245,660,267,720,250.7C780,235,840,181,900,181.3C960,181,1020,235,1080,256C1140,277,1200,267,1260,266.7C1320,267,1380,277,1410,282.7L1440,288L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+            <path 
+                d="
+                M 0 10
+                V 6
+                C 3 6,     7 8,       10 8
+                C 13 8,    17 4,      20 4
+                C 23 4,    27 7,      30 7
+                V 10
+                Z
+                ">
+                
+                    <animate attributeName="d" dur="20s" repeatCount="indefinite" keyTimes="0 ; 0.5 ; 1"
+                    values="
+                        M 0 10
+                        V 6
+                        C 3 6,     7 8,       10 8
+                        C 13 8,    17 4,      20 4
+                        C 23 4,    27 7,      30 7
+                        V 10
+                        Z;
+
+                        M 0 10
+                        V 6
+                        C 3 6,     7 5,       10 5
+                        C 13 5,    17 2,      20 2
+                        C 23 2,    27 7,      30 7
+                        V 10
+                        Z;
+
+                        M 0 10
+                        V 6
+                        C 3 6,     7 8,       10 8
+                        C 13 8,    17 4,      20 4
+                        C 23 4,    27 7,      30 7
+                        V 10
+                        Z"
+                    />
             </path>
         </svg>
     </header>
@@ -131,15 +171,35 @@
             during a rescue situation. Add a beacon to your daily gear list, put it on when conditions are right, and
             turn it on for the day of shredding.</p>
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" class="squiggly">
-            <path stroke="" stroke-width="10" stroke-linecap="round" fill="none" d="
-            M 48 229
-            C 96 203, 192 149, 288 154
-            C 384 160, 480 224, 576 218
-            C 672 213, 768 139, 864 128
-            C 960 117, 1056 171, 1152 197
-            C 1248 224, 1344 224, 1392 224
-            " />
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 10" preserveAspectRatio="none" class="squiggly">
+            <path stroke="" stroke-width="0.33" stroke-linecap="round" fill="none" d="
+                M 1 8
+                C 4 8,     7 5,       10 5
+                C 13 5,    17 7,      20 7
+                C 23 7,    27 4,      30 4
+                C 33 4,    37 6,      40 6
+            ">
+                <animate attributeName="d" dur="20s" repeatCount="indefinite" keyTimes="0 ; 0.5 ; 1"
+                values="
+                    M 1 8
+                    C 4 8,     7 5,       10 5
+                    C 13 5,    17 7,      20 7
+                    C 23 7,    27 4,      30 4
+                    C 33 4,    37 6,      40 6;
+
+                    M 1 7
+                    C 4 7,     7 4,       10 4
+                    C 13 4,    17 5,      20 5
+                    C 23 5,    27 6,      30 6
+                    C 33 6,    37 7,      40 7;
+
+                    M 1 8
+                    C 4 8,     7 5,       10 5
+                    C 13 5,    17 7,      20 7
+                    C 23 7,    27 4,      30 4
+                    C 33 4,    37 6,      40 6"
+                />
+            </path>
         </svg>
 
         <h2>The ways to help</h2>
@@ -161,15 +221,31 @@
         <p>If you wish to and have the ability to help financially all we are asking for is printed materials, stickers,
             signage, apparel please get in touch.</p>
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" class="squiggly">
-            <path stroke="" stroke-width="10" stroke-linecap="round" fill="none" d="
-            M 48 160
-            C 96 160,192 160, 288 170
-            C 384 181,480 203, 576,197
-            C 672 192,768 160, 864,133
-            C 960 107,1056 85, 1152,80
-            C 1248 75,1344 85, 1392,90
-            " />
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 10" preserveAspectRatio="none" class="squiggly">
+            <path stroke="" stroke-width="0.33" stroke-linecap="round" fill="none" d="
+                M 1 5
+                C 4 5,     7 7,       10 7
+                C 13 7,    17 2,      20 2
+            ">
+
+                <animate attributeName="d" dur="15s" repeatCount="indefinite" keyTimes="0 ; 0.33 ; 0.66 ; 1"
+                values="M 1 5
+                C 4 5,     7 7,       10 7
+                C 13 7,    17 2,      20 2;
+
+                M 1 3
+                C 4 3,     7 9,       10 9
+                C 13 9,    17 1,      20 1;
+                
+                M 1 4
+                C 4 4,     7 8,       10 8
+                C 13 8,    17 3,      20 3;
+
+                M 1 5
+                C 4 5,     7 7,       10 7
+                C 13 7,    17 2,      20 2"
+                />
+            </path>
         </svg>
     </main>
 
@@ -182,10 +258,43 @@
                 <p>This is about all of us.</p>
             </div>
 
-            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="you-blob blobby">
+            <!-- <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="you-blob blobby">
                 <path
                     d="M32.6,-33.4C42.4,-22.7,50.7,-11.4,53.8,3.1C56.9,17.6,54.8,35.2,45,51.6C35.2,68,17.6,83.2,0.4,82.8C-16.9,82.4,-33.8,66.6,-50.3,50.2C-66.9,33.8,-83.1,16.9,-79.8,3.3C-76.5,-10.2,-53.6,-20.5,-37,-31.1C-20.5,-41.8,-10.2,-52.9,0.6,-53.4C11.4,-54,22.7,-44.1,32.6,-33.4Z"
                     transform="translate(100 100)" />
+            </svg> -->
+            
+            <svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" class="you-blob blobby">
+                <path
+                    d="M 5 2
+                    T 8, 5
+                    T 5, 9
+                    T 1, 5
+                    T 5, 2
+                ">
+
+                <animate attributeName="d" dur="15s" repeatCount="indefinite" keyTimes="0 ; 0.5 ; 1"
+                values="M 5 2
+                T 8, 5
+                T 5, 9
+                T 1, 5
+                T 5, 2;
+
+                M 5 1
+                T 8.5, 4
+                T 6, 8
+                T 1.5, 5.5
+                T 5, 1;
+
+                M 5 2
+                T 8, 5
+                T 5, 9
+                T 1, 5
+                T 5, 2"
+                />
+
+                </path>
+
             </svg>
 
 
@@ -271,17 +380,39 @@
         </div>
 
         <picture>
-            <source srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-1260x901.jpg" media="(min-width: 1080px)" />
-            <source srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-1260x901.webp" type="image/webp" media="(min-width: 1080px)" />
-            <source srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-1080x773.jpg" media="(min-width: 900px)" />
-            <source srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-1080x773.webp" media="(min-width: 900px)" type="image/webp" />
-            <source srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-900x644.jpg" media="(min-width: 720px)" />
-            <source srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-900x644.webp" media="(min-width: 720px)" type="image/webp" />
-            <source srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-720x515.jpg" media="(min-width: 540px)" />
-            <source srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-720x515.webp" media="(min-width: 540px)" type="image/webp" />
-            <source srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-540x386.jpg" media="(min-width: 360px)" />
-            <source srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-540x386.webp" media="(min-width: 360px)" type="image/webp" />
-            <source srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-360x257.webp" type="image/webp" />
+            <source
+                srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-1260x901.jpg"
+                media="(min-width: 1080px)" />
+            <source
+                srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-1260x901.webp"
+                type="image/webp" media="(min-width: 1080px)" />
+            <source
+                srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-1080x773.jpg"
+                media="(min-width: 900px)" />
+            <source
+                srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-1080x773.webp"
+                media="(min-width: 900px)" type="image/webp" />
+            <source
+                srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-900x644.jpg"
+                media="(min-width: 720px)" />
+            <source
+                srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-900x644.webp"
+                media="(min-width: 720px)" type="image/webp" />
+            <source
+                srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-720x515.jpg"
+                media="(min-width: 540px)" />
+            <source
+                srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-720x515.webp"
+                media="(min-width: 540px)" type="image/webp" />
+            <source
+                srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-540x386.jpg"
+                media="(min-width: 360px)" />
+            <source
+                srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-540x386.webp"
+                media="(min-width: 360px)" type="image/webp" />
+            <source
+                srcset="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-360x257.webp"
+                type="image/webp" />
             <img src="https://beaconsinbounds.s3.us-west-1.amazonaws.com/2%2BGarrett%2Blaying%2Bit%2Bout%2Bon%2Bwhite%2B-%2Balpine%2Bmeadows%2Bshot%2Bbt%2BRiley%2BBathurst-360x257.jpg"
                 alt="snowboarder laying down a carve" />
         </picture>
