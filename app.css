@@ -338,6 +338,34 @@ main svg {
   }
 }
 
+@keyframes blobber {
+  0% {
+    transform: 
+      scale(1, 1)
+      rotate(0deg)
+    ;
+  }
+
+  50% {
+    transform:
+      scale(0.7, 1.2)
+      rotate(180deg)
+    ;
+  }
+
+  100% {
+    transform:
+      scale(1, 1)
+      rotate(360deg)
+    ;
+  }
+}
+
+.blobby {
+  /* @keyframes duration | easing-function | delay | iteration-count | direction | fill-mode | play-state | name */
+  animation: blobber 60s linear infinite;
+}
+
 #involved picture {
   grid-row: 1;
   grid-column: 1;
@@ -368,7 +396,7 @@ main svg {
 }
 
 /*------------------------------------*/
-  /* #supprt */
+/* #supprt */
 /*------------------------------------*/
 
 #support {
@@ -383,7 +411,7 @@ main svg {
 /*------------------------------------*/
 
 #contact {
-  max-width: calc( var(--base-measure) - 2rem );
+  max-width: calc(var(--base-measure) - 2rem);
   margin-inline: auto;
   margin-block-end: 3rem;
   padding-inline: 1rem;
