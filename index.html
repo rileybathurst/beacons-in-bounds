@@ -125,7 +125,7 @@
                 Z
                 ">
                 
-                    <animate attributeName="d" dur="20s" repeatCount="indefinite" keyTimes="0 ; 0.5 ; 1"
+                    <animate attributeName="d" dur="2s" repeatCount="indefinite" keyTimes="0 ; 0.5 ; 1"
                     values="
                         M 0 10
                         V 6
@@ -343,15 +343,42 @@
         </article>
 
         <!-- this gets broken in dark mode -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" class="squiggly">
-            <path stroke="" stroke-width="10" stroke-linecap="round" fill="none" d="
-            M 48 160
-            C 96 160,192 160, 288 170
-            C 384 181,480 203, 576,197
-            C 672 192,768 160, 864,133
-            C 960 107,1056 85, 1152,80
-            C 1248 75,1344 85, 1392,90
-            " />
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 10" preserveAspectRatio="none" class="squiggly">
+            <path stroke="" stroke-width="0.25" stroke-linecap="round" fill="none" d="
+            M 1 6
+            C 3 6,    7 7,     10 7
+            C 13 7,   17 2,    20,2
+            C 23 2,   27 4,    30,4
+            ">
+                <animate
+                    attributeName="d" dur="60s" repeatCount="indefinite" keyTimes="0 ; 0.25 ; 0.5 ; 0.75; 1"
+                    values="
+                    M 1 6
+                    C 3 6,    7 7,     10 7
+                    C 13 7,   17 2,    20,2
+                    C 23 2,   27 4,    30,4;
+
+                    M 1 7
+                    C 3 7,    7 2,     10 2
+                    C 13 2,   17 4,    20,4
+                    C 23 4,   27 6,    30,6;
+                    
+                    M 1 7
+                    C 3 7,    7 4,     10 4
+                    C 13 4,   17 6,    20,6
+                    C 23 6,   27 7,    30,7;
+
+                    M 1 4
+                    C 3 4,    7 6,     10 6
+                    C 13 6,   17 7,    20,7
+                    C 23 7,   27 4,    30,4;
+
+                    M 1 6
+                    C 3 6,    7 7,     10 7
+                    C 13 7,   17 2,    20,2
+                    C 23 2,   27 4,    30,4
+                    "/>
+            </path>
         </svg>
 
     </section>
