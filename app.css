@@ -222,6 +222,7 @@ header .filter-backer {
 header .primary-backer {
   background: var(--primary);
   mix-blend-mode: multiply;
+  z-index: -1; /* needed for chrome */
 }
 
 @media (color-gamut: p3) {
@@ -332,11 +333,11 @@ main svg {
   margin-inline: auto;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   #involved .blobby {
     mix-blend-mode: color;
   }
-}
+} */
 
 @keyframes blobber {
   0% {
@@ -446,6 +447,13 @@ main svg {
 
 footer {
   display: grid;
+  background: whitesmoke; /* needed for the mix blend mode */
+}
+
+@media (prefers-color-scheme: dark) {
+  footer {
+    background: darkslategray;
+  }
 }
 
 footer :is(h4, a) {
@@ -486,6 +494,7 @@ footer .footer-backer {
   grid-column: 1;
   mix-blend-mode: multiply;
   background: var(--primary);
+  z-index: 2;
 }
 
 @media (color-gamut: p3) {
@@ -524,7 +533,7 @@ footer picture {
   width: 100%;
   grid-row: 1/3;
   grid-column: 1;
-  z-index: -1;
+  z-index: 1;
   max-height: 35rem;
   mix-blend-mode: multiply;
 }
@@ -543,18 +552,6 @@ picture {
 /* #WAVES */
 /*------------------------------------*/
 
-.orange-waves {
-  grid-row: 2;
-  align-self: start;
-  rotate: 180deg;
-  mix-blend-mode: multiply;
-}
-
-.white-waves {
-  grid-row: 2;
-  align-self: end;
-}
-
 .waves {
   width: 100%;
   height: 15vh;
@@ -563,6 +560,35 @@ picture {
   min-height: 5rem;
   max-height: 10rem;
 }
+
+.orange-waves {
+  mix-blend-mode: multiply;
+}
+@media (prefers-color-scheme: dark) {
+  .orange-waves {
+    mix-blend-mode: color;
+  }
+}
+
+.orange-waves__header {
+  grid-row: 2;
+  align-self: start;
+  /* rotate: 180deg; */
+  transform: rotate(180deg);
+  z-index: -1;
+}
+
+.orange-waves__footer {
+  grid-row: 1;
+  align-self: end;
+  margin-block-end: 0;
+}
+
+.white-waves {
+  grid-row: 2;
+  align-self: end;
+}
+
 
 /* Animation */
 
@@ -607,5 +633,65 @@ picture {
   .waves {
     height: 2.5rem;
     min-height: 2.5rem;
+  }
+}
+
+
+.white-waves .wave__one {
+  fill: rgba(245,245,245,1);
+}
+
+@media (prefers-color-scheme: dark) {
+  .white-waves .wave__one {
+    fill: rgba(47, 79, 79,1);
+  }
+}
+
+.white-waves .wave__point-seven {
+  fill: rgba(245,245,245,0.7);
+}
+
+@media (prefers-color-scheme: dark) {
+  .white-waves .wave__point-seven {
+    fill: rgba(47, 79, 79,0.7);
+  }
+}
+
+.white-waves .wave__point-five {
+  fill: rgba(245,245,245,0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+  .white-waves .wave__point-five {
+    fill: rgba(47, 79, 79,0.5);
+  }
+}
+
+.white-waves .wave__point-three {
+  fill: rgba(245,245,245,0.3);
+}
+
+@media (prefers-color-scheme: dark) {
+  .white-waves .wave__point-three {
+    fill: rgba(47, 79, 79,0.3);
+  }
+}
+
+.stroke-waves {
+  fill: none;
+  stroke: orange;
+}
+
+.parallax-stroke {
+  animation: stroke-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+@keyframes stroke-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
   }
 }
